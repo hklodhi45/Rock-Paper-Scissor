@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+
+    <!-- Google Fonts Start-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Changa+One&display=swap" rel="stylesheet">
+    <!-- Google Fonts End-->
+
+    <link rel="stylesheet" href="RPS.css">
+</head>
+<body>
+
+    <header>
+        <div class="header">ROCK PAPER SCISSOR</div>
+    </header>
+    
+    <div class="content">
+        <div class="user-pick-container container">
+            <div class="heading">YOU</div>
+            <div class="js-user-pick-img" id="user-img-box"></div>
+        </div>
+
+        <div class="result-container">
+            <div class="score-container">
+                <div class="win-box win-lose">
+                    <div>WINs</div>
+                    <div class="win-score"></div>
+                </div>
+                <div class="tie-box">
+                    <div>TIEs</div>
+                    <div class="tie-score"></div>
+                </div>
+                <div class="lose-box win-lose">
+                    <div>LOSEs</div>
+                    <div class="lose-score"></div>
+                </div>
+            </div>
+            <div class="result-details-container">
+                <div class="x-beats-y"></div>
+                <div class="result"></div>
+            </div>
+        </div>
+
+        <div class="computer-pick-container container">
+            <div class="heading">COMPUTER</div>
+            <div class="computer-pick-img" id="computer-img-box"></div>
+        </div>
+    </div>
+
+    <div class="reset-score-box">
+        <button class="reset-score-button">Restart</button>
+        <button class="AutoPlay-button">AutoPlay</button>
+    </div>
+
+    <div class="picking-section">
+        <button class="rock-img pick-img" onclick="
+            showPicking('user-img-box','ROCK');
+            result('ROCK','SCISSOR','PAPER');
+        "></button>
+        <button class="paper-img pick-img" onclick="
+            showPicking('user-img-box','PAPER');
+            result('PAPER','ROCK','SCISSOR');
+        "></button>
+        <button class="scissor-img pick-img" onclick="
+            showPicking('user-img-box','SCISSOR');
+            result('SCISSOR','PAPER','ROCK');
+        "></button>
+    </div>
+
+
+    <script src="RPS.js"></script>
+</body>
+</html>
