@@ -188,16 +188,16 @@ header{
 }
 
 .rock-img{
-    background-image: url('rock_user.png');
+    background-image: url('./Images/rock_user.png');
     box-shadow: 0px 0px 20px 4px rgb(185, 185, 47);
 }
 
 .paper-img{
-    background-image: url('paper_user.png');
+    background-image: url('./Images/paper_user.png');
     box-shadow: 0px 0px 20px 4px rgba(31, 168, 166, 0.941);
 }
 .scissor-img{
-    background-image: url('scissors_user.png');
+    background-image: url('./Images/scissors_user.png');
     box-shadow: 0px 0px 20px 4px rgb(216, 120, 211);
 }
 

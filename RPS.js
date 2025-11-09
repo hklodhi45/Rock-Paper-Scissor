@@ -28,28 +28,28 @@ function showPicking(id,picking){
     
     if(id === 'user-img-box'){
         if(picking === 'ROCK'){
-            jsImagePick.style.backgroundImage = "url('rock_user.png')";
+            jsImagePick.style.backgroundImage = "url('./Images/rock_user.png')";
             jsImagePick.style.boxShadow = "0px 0px 20px 4px rgb(185, 185, 47)";
 
         } else if(picking === 'PAPER'){
-            jsImagePick.style.backgroundImage = "url('paper_user.png')";
+            jsImagePick.style.backgroundImage = "url('./Images/paper_user.png')";
             jsImagePick.style.boxShadow = "0px 0px 20px 4px rgba(31, 168, 166, 0.941)";
 
         } else if(picking === 'SCISSOR'){
-            jsImagePick.style.backgroundImage = "url('scissors_user.png')";
+            jsImagePick.style.backgroundImage = "url('./Images/scissors_user.png')";
             jsImagePick.style.boxShadow = "0px 0px 20px 4px rgb(216, 120, 211)";
         }
     } else{
         if(picking === 'ROCK'){
-            jsImagePick.style.backgroundImage = "url('rock.png')";
+            jsImagePick.style.backgroundImage = "url('./Images/rock.png')";
             jsImagePick.style.boxShadow = "0px 0px 20px 4px rgb(185, 185, 47)";
 
         } else if(picking === 'PAPER'){
-            jsImagePick.style.backgroundImage = "url('paper.png')";
+            jsImagePick.style.backgroundImage = "url('./Images/paper.png')";
             jsImagePick.style.boxShadow = "0px 0px 20px 4px rgba(31, 168, 166, 0.941)";
 
         } else if(picking === 'SCISSOR'){
-            jsImagePick.style.backgroundImage = "url('scissors.png')";
+            jsImagePick.style.backgroundImage = "url('./Images/scissors.png')";
             jsImagePick.style.boxShadow = "0px 0px 20px 4px rgb(216, 120, 211)";
         }
     }
